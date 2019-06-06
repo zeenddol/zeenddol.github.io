@@ -1,0 +1,589 @@
+<!-- C_21561117_진세준 -->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+	<meta charset="UTF-8">
+	<title>세번째 이야기</title>
+	<style>
+		#back-top {
+			position: fixed;
+			bottom: 30px;
+			margin-left: -150px;
+		}
+
+		h2 {
+			color: white;
+		}
+
+		h1 {
+			color: white;
+		}
+
+		#back-top a {
+			width: 108px;
+			display: block;
+			text-align: center;
+			font: 11px/100% Arial, Helvetica, sans-serif;
+			text-transform: uppercase;
+			text-decoration: none;
+			color: #bbb;
+
+			-webkit-transition: 1s;
+			-moz-transition: 1s;
+			transition: 1s;
+		}
+
+		#back-top a:hover {
+			color: #000;
+		}
+
+		#back-top span {
+			width: 108px;
+			height: 108px;
+			display: block;
+			margin-bottom: 7px;
+			background: #ddd url(up-arrow.png) no-repeat center center;
+
+			-webkit-border-radius: 15px;
+			-moz-border-radius: 15px;
+			border-radius: 15px;
+
+			-webkit-transition: 1s;
+			-moz-transition: 1s;
+			transition: 1s;
+		}
+
+		#back-top a:hover span {
+			background-color: #777;
+		}
+
+		a.top {
+			position: fixed;
+			left: 50%;
+			bottom: 50px;
+			display: none;
+		}
+
+		body {
+			background-image: url('./image/bg.gif');
+			background-size: 2000px;
+		}
+
+		@import url(https://fonts.googleapis.com/css?family=Raleway:500,900);
+
+		figure.snip1432 {
+			font-family: 'Raleway', Arial, sans-serif;
+			color: #fff;
+			position: relative;
+			overflow: hidden;
+			margin: 10px;
+			min-width: 315px;
+			max-width: 315px;
+			min-height: 200px;
+			max-height: 200px;
+			width: 100%;
+			background: #000000;
+			color: #ffffff;
+			text-align: center;
+			float: left;
+		}
+
+		figure.snip1432 * {
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+			-webkit-transition: all 0.6s ease;
+			transition: all 0.6s ease;
+		}
+
+		figure.snip1432 img {
+			opacity: 0.8;
+			width: 100%;
+			vertical-align: top;
+			-webkit-transition: opacity 0.35s;
+			transition: opacity 0.35s;
+		}
+
+		a.jcm-top:hover {
+			background-color: none
+		}
+
+		figure.snip1432 figcaption {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+
+		figure.snip1432 figcaption>div {
+			height: 50%;
+			overflow: hidden;
+			width: 100%;
+			position: relative;
+		}
+
+		figure.snip1432 h2,
+		figure.snip1432 h3 {
+			margin: 0;
+			position: absolute;
+			left: 0;
+			padding: 0 30px;
+			text-transform: uppercase;
+		}
+
+		a#MOVE_TOP_BTN {
+			position: fixed;
+			right: 2%;
+			bottom: 50px;
+			display: none;
+			z-index: 999;
+		}
+
+		figure.snip1432 h2 {
+			font-weight: 900;
+			top: 0;
+		}
+
+		figure.snip1432 h3 {
+			font-size: 1em;
+			bottom: 0;
+			font-weight: 500;
+		}
+
+		figure.snip1432 h3:nth-of-type(2) {
+			opacity: 0;
+			-webkit-transform: translateY(150%);
+			transform: translateY(150%);
+		}
+
+		figure.snip1432 a {
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			position: absolute;
+		}
+
+		figure.snip1432:hover img,
+		figure.snip1432.hover img {
+			opacity: 0.3;
+			-webkit-filter: grayscale(100%);
+			filter: grayscale(100%);
+		}
+
+		figure.snip1432:hover figcaption h3:first-of-type,
+		figure.snip1432.hover figcaption h3:first-of-type {
+			-webkit-transform: translateY(150%);
+			transform: translateY(150%);
+			opacity: 0;
+		}
+
+		figure.snip1432:hover figcaption h3:nth-of-type(2),
+		figure.snip1432.hover figcaption h3:nth-of-type(2) {
+			opacity: 1;
+			-webkit-transform: translateY(0%);
+			transform: translateY(0%);
+		}
+
+		a.jcm-top {
+			position: fixed;
+			right: 60px;
+			bottom: 60px;
+			border-radius: 5px;
+			text-align: center;
+			width: 80px;
+			height: 80px;
+			font-size: 40px;
+			z-index: 999;
+			display: none;
+		}
+
+		ul {
+			text-align: center;
+		}
+
+		#address1 {
+			font-size: 13px;
+			color: white;
+		}
+
+		#wh {
+			color: white;
+		}
+
+		ul.a {
+			text-align: right;
+			float: left;
+		}
+
+		ul.b {
+			text-align: left;
+			float: right;
+		}
+
+		.navbar {
+			overflow: hidden;
+			background-color: #ffffff;
+			background-opacity: 0.5;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+
+		.navbar a {
+			float: left;
+			font-size: 16px;
+			color: black;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+
+		.dropdown {
+			float: left;
+			overflow: hidden;
+		}
+
+		.dropdown .dropbtn {
+			font-size: 16px;
+			border: none;
+			outline: none;
+			color: black;
+			padding: 14px 16px;
+			background-color: inherit;
+			font: inherit;
+			margin: 0;
+		}
+
+		.navbar a:hover,
+		.dropdown:hover .dropbtn {
+			background-color: #ef4923;
+		}
+
+		.dropdown-content {
+			display: none;
+			position: absolute;
+			background-color: #ffffff;
+			width: 100%;
+			left: 0;
+			box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+			z-index: 1;
+		}
+
+		.dropdown-content .header {
+			background: red;
+			padding: 16px;
+			color: white;
+		}
+
+		.dropdown:hover .dropdown-content {
+			display: block;
+		}
+
+		.column {
+			float: left;
+			width: 33.33%;
+			padding: 10px;
+			background-color: #white;
+			opacity: 0.5;
+			height: 250px;
+		}
+
+		.column a {
+			float: none;
+			color: black;
+			padding: 16px;
+			text-decoration: none;
+			display: block;
+			text-align: left;
+		}
+
+		.column a:hover {
+			background-color: #212121;
+		}
+
+		.row:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+	</style>
+
+
+
+
+
+	<script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$("#back-top").hide();
+			$(function() {
+				$(window).scroll(function() {
+					if ($(this).scrollTop() > 100) {
+						$('#back-top').fadeIn();
+					} else {
+						$('#back-top').fadeOut();
+					}
+				});
+				$('#back-top a').click(function() {
+					$('body,html').animate({
+						scrollTop: 0
+					}, 800);
+					return false;
+				});
+			});
+		});
+	</script>
+	<script>
+		$(function() {
+			$(window).scroll(function() {
+				if ($(this).scrollTop() > 500) {
+					$('#MOVE_TOP_BTN').fadeIn();
+				} else {
+					$('#MOVE_TOP_BTN').fadeOut();
+				}
+			});
+			$("#MOVE_TOP_BTN").click(function() {
+				$('html, body').animate({
+					scrollTop: 0
+				}, 400);
+				return false;
+			});
+		});
+	</script>
+
+	<script>
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event) {
+				event.preventDefault();
+				$('html,body').animate({
+					scrollTop: $(this.hash).offset().top
+				}, 500);
+			});
+		});
+	</script>
+	<script type="text/javascript" src="top.js"></script>
+
+	<script>
+		$(document).ready(function() {
+			$(window).scroll(function() {
+				if ($(this).scrollTop() > 200) {
+					$('.top').fadeIn();
+				} else {
+					$('.top').fadeOut();
+				}
+			});
+			$('.top').click(function() {
+				$('html, body').animate({
+					scrollTop: 0
+				}, 400);
+				return false;
+			});
+		});
+	</script>
+	<script>
+		var scrollUpDelay = 1;
+		var scrollUpSpeed = 30;
+
+		function scrollUp() {
+			if (document.body.scrollTop < 1) {
+				return;
+			}
+			document.body.scrollTop = document.body.scrollTop - scrollUpSpeed;
+			setTimeout('scrollUp()', scrollUpDelay);
+		}
+	</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+</head>
+<script>
+	$(document).ready(function() {
+		$(window).scroll(function() {
+			if ($(this).scrollTop() > 200) {
+				$('.jcm-top').fadeIn();
+			} else {
+				$('.jcm-top').fadeOut();
+			}
+		});
+		$('.jcm-top').click(function() {
+			$('html, body').animate({
+				scrollTop: 0
+			}, 400);
+			return false;
+		});
+	});
+</script>
+<script>
+	$(document).ready(function() {
+		$('.jcm-top').hover(function() {
+			$(this).css("backgroundColor", "none").css("opacity", 0.5);
+		}, function() {
+			$(this).css("backgroundColor", "none").css("opacity", 0.5);
+		});
+	});
+</script>
+
+<body>
+	<nav>
+		<div class="navbar">
+			<a href="./index.html">ZN</a>
+			<a href="./profile.html">Profile</a>
+			<div class="dropdown">
+				<button class="dropbtn">Portfolio
+					<i class="fa fa-caret-down"></i>
+				</button>
+				<div class="dropdown-content">
+					<div class="row">
+						<div class="column">
+							<h3><span style="color:#ef4923" ;>TYPO</span></h3>
+							<a href="./s1.html">1</a>
+							<a href="./s2.html">2</a>
+							<a href="./s3.html">3</a>
+						</div>
+						<div class="column">
+							<h3><span style="color:#ef4923" ;>IMAGE</span></h3>
+							<a href="./s4.html">1</a>
+							<a href="./s5.html">2</a>
+
+						</div>
+						<div class="column">
+							<h3><span style="color:#ef4923" ;>VFX</span></h3>
+							<a href="https://jeansj0285.wixsite.com/hhillin">Studying</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<a href="./index2.html">Web Publishing</a>
+		</div>
+	</nav>
+
+
+	<br />
+	<a href="./index.html"><img src="image/logo.png" width="250px"></a>
+	<br /><br /><br />
+
+
+	<table width="100%" style="text-align:center; border:none; ">
+		<tr>
+			<td colspan="2" style="background-color:#98dfde;margin:4px;padding-left:200px;padding-top:200px;padding-right:200px;">
+
+
+				<h1>중2병으로 시작해서, 관종의 삶</h1><br /><br /><br /><br />
+				<h2>중학교 시절 기록된 사진은 몇 장 남아있지 않다.</h2>
+				<h2>학창 시절 흑역사가 많았던터라 이불킥을 차면서 사진을 지웠던 걸로 보인다.</h2>
+				<h2>바로 고교시절로 들어가보도록 하자.</h2><br /><br /><br /><br /><br /><br /><br /><br />
+				<img src="./image/ca.jpg" height="300"><br /><br /><br /><br /><br />
+				<br /><br />
+				<h2>그는 관종의 메카 UCC라는 것에 푹 빠졌었다.</h2>
+				<h2>그로 인해 UCC 창설을 시작하였고 그의 영상 인생의 서막을 알렸다.</h2><br />
+
+				</h2><br /><br /><br /><br /><br />
+				<h2>동아리 활동을 열심히 했던 탓인지.</h2>
+				<h2>공모전 수상도 하고 더 불어 선생님들의 사랑을 받으며 학생회에 발탁되었다.</h2><br /><br /><br /><br />
+				<img src="./image/ccsc.jpg" width="280"><img src="./image/c.jpg" width="500"></ul><br /><br /><br /><br /><br /><br /></img><br /><br /><br /><br />
+
+				<h2>이때부터가 시작이였다.</h2>
+				<br /><br /><br /></img><br /><br /><br /><br />
+				<br clear="center">
+
+
+				<img src="./image/cb.png" height="400"><img src="./image/cc.jpg" height="400"><br /><br /><br /><br /><br /><br /><br />
+				<h2>당시 페북 라이크 충이였던 진세준씨는</h2><br /><br />
+				<h2>관심이 뭐가 그리 좋았던지 설치고 다녔었다.</h2><br /><br />
+				<h2>성인이 된 현재 진세준씨 흑역사들을 나서야 하나 둘 씩 지워나가고 있다.</h2><br />
+				<br clear="center">
+				<br /><br /><br /><br /><br /><br /><br /><br /><br />
+				<h2>다음 파트는</h2><br /><br /><br />
+				<h2>술과 함께 시작 된 알콜쓰레기 진세준씨의 성장기를 시작해보자.</h2> <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><img src="./image/ccccc.jpg" height="400"></img><br /><br /><br />
+
+
+
+				<br /><br /><br /><br />
+			</td>
+		</tr>
+	</table>
+
+	<br /><br /><br /><br /><br />
+
+	<ul>
+		<!-- 1번째 --><a href="./page1.html">
+			<figure class="snip1432">
+				<img src="./image/1.png">
+				<figcaption>
+					<div>
+						<h3>진세준 탄생 비하인드 스토리</h3>
+						<h3>서막을 알리다, 첫번째 이야기</h3>
+					</div>
+					<div>
+						<h2>유년기</h2>
+					</div>
+				</figcaption>
+
+			</figure>
+		</a>
+		<!-- 2번째 --><a href="./page2.html">
+			<figure class="snip1432"><img src="./image/2.png">
+				<figcaption>
+					<div>
+						<h3>누구와 다를 것 없이 자라다</h3>
+						<h3>또는 특별해 보일지도, 두번째 이야기</h3>
+					</div>
+					<div>
+						<h2>아동기</h2>
+					</div>
+				</figcaption>
+
+			</figure>
+		</a>
+
+		<!-- 3번째 --><a href="./page3.html">
+			<figure class="snip1432"><img src="./image/3.png">
+				<figcaption>
+					<div>
+						<h3>중2병 이후 자아성찰기</h3>
+						<h3>주체는 누구인가, 세번째 이야기</h3>
+					</div>
+					<div>
+						<h2>성장기</h2>
+					</div>
+				</figcaption>
+
+			</figure>
+		</a>
+
+		<!-- 4번째 --><a href="./page4.html">
+			<figure class="snip1432"><img src="./image/4.png">
+				<figcaption>
+					<div>
+						<h3>그는 아직도 자라고 있다.</h3>
+						<h3>죽기 전까지, 네번째 이야기</h3>
+					</div>
+					<div>
+						<h2>성숙기</h2>
+					</div>
+				</figcaption>
+
+			</figure>
+		</a>
+	</ul>
+</body>
+
+<body>
+	<ul>
+		<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+		<a href="#" class="jcm-top"><img src="./image/top.png" style="margin-bottom: 24px;width: 80px;"></a>
+</body>
+
+<address id="address1">
+
+	instagram : @zeenddol<br />
+	kakaotalk : orange0285<br />
+	email : jeansj0285@gmail.com
+</address>
+<p id="wh">COPYRIGHT ⓒ 2019 SE-JOON JIN ALL RIGHTS RESERVED.</p>
+</ul>
+</body>
+
+
+</html>
